@@ -2,18 +2,19 @@
 header{
     display: flex;
     grid-area: header;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content:center;
     align-items: center;
     background-color: $second-color;
     left: 0;
     top: 0;
     right: 0;
-    height: 80px;
+    height: 100%;
 }
 
 #tv-logo{
     padding: 5px 5px;
-    width: 150px;
+    width: 10rem;
     display: inline;
 }
 
