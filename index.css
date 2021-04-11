@@ -18,6 +18,52 @@ html, body{
     width: 90%;
 }
 
+.skill-name{
+    font-size: 150%;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  
+  .skill-bar{
+    height: 15px;
+    background: #cacaca;
+    border-radius: 8px;
+  }
+  
+  .skill-per{
+    height: 100%;
+    background-color:#2e93a5 ;
+    border-radius: 8px;
+    width: 0;
+    transition: 2s linear;
+    position: relative;
+  }
+  
+  .skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #000;
+    color: #fff;
+    font-size: 9px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+  }
+  
+  .skill-per::after{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    top: -16px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+
 .profile{
     flex: 1;
     max-width: 45%;
@@ -121,21 +167,19 @@ html, body{
     color: #2e93a5;
 }
 
- .skills h2{
+h2{
     color: #1d7585;
+    size: 80%;
  }
  .skills h3{
      font-size: 150%;
+     line-height:1.5rem;
  }
  .skills section {
     font-size: 70%;
 
  }
- .skills .personal .skill .precentage{
-     background-color: #a6a6a6;
-    
 
- }
  .skills section h3{
 
 
